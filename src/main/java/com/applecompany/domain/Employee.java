@@ -10,12 +10,14 @@ public class Employee {
     String lastName;
     String nationalCode;
     Long salary;
+    Long salaryToman;
 
-    public Employee(String firstName, String lastName, String nationalCode, Long salary) {
+    public Employee(String firstName, String lastName, String nationalCode, Long salary, Long salaryToman) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.nationalCode = nationalCode;
         this.salary = salary;
+        this.salaryToman = salaryToman;
     }
 
     @Override
