@@ -10,7 +10,7 @@ public class EmployeeController {
 
 
     /*
-    * example: http://localhost:8080/Employee/fullName/Kami/salami
+    * example: http://localhost:8080/Employee/fullName/Kani/salami
     * */
     @GetMapping("/fullName/{name}/{lastName}")
     public ResponseEntity<String> getName(@PathVariable String name,@PathVariable String lastName){
@@ -40,7 +40,8 @@ String fullName = name + " " + lastName;
 
     @PostMapping("/CalculateSalary")
     public ResponseEntity<Employee> salary(@RequestBody Employee employee){
-         employee.setSalaryToman(employee.getSalary() * 36000);
+         employee.setSalaryToman(employee.getSalary() * 37000);
+        employee.setFirstName("Hana");
         return ResponseEntity.ok(employee);
     }
 
