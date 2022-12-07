@@ -41,7 +41,7 @@ String fullName = name + " " + lastName;
     @PostMapping("/CalculateSalary")
     public ResponseEntity<Employee> salary(@RequestBody Employee employee){
          employee.setSalaryToman(employee.getSalary() * 37000);
-        employee.setFirstName("Hana");
+        employee.setFirstName("daaaaa");
         return ResponseEntity.ok(employee);
     }
 
